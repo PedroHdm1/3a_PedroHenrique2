@@ -7,11 +7,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
     <children>
-        <Button fx:id="button" layoutX="222.0" layoutY="150.0" onAction="#handleButtonAction" text="TESTE" />
+        <Button fx:id="button" layoutX="147.0" layoutY="108.0" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="69.0" text="TESTE" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <JFXBadge layoutX="66.0" layoutY="51.0" prefHeight="10.0" prefWidth="58.0" />
-      <JFXButton layoutX="40.0" layoutY="150.0" text="teste2" />
+      
+      <MenuBar layoutX="2.0" layoutY="2.0" prefHeight="25.0" prefWidth="356.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Aluno" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
